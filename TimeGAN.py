@@ -1,10 +1,11 @@
 import numpy as np
 import tensorflow as tf
-from tensorflow import keras
+# from tensorflow import keras
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from keras.utils import to_categorical
 from numpy import array, dstack
+import tf_keras as keras
 
 trainx_file = "./datatrain_40/total/trainx.txt"
 trainy_file = "./datatrain_40/total/trainy.txt"
@@ -140,7 +141,7 @@ def train_timegan(train_data, epochs=100, batch_size=32):
     hidden_dim = 24  # You can adjust this
 
     model = TimeGAN(seq_len, n_features, hidden_dim)
-    model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=0.001))
+    model.compile(optimizer=keras.optimizers.legacy.Adam(learning_rate=0.001))
 
     train_data_reshaped = train_data.reshape(-1, seq_len, n_features)
 
