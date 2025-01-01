@@ -18,7 +18,7 @@ from keras.layers import MaxPooling1D
 from keras.utils import to_categorical
 from keras.models import load_model
 from matplotlib import pyplot
-import pyttsx3
+# import pyttsx3
 import serial
 import time
 from sklearn.preprocessing import MinMaxScaler
