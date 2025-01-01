@@ -1,0 +1,50 @@
+\subsection{Giới thiệu về Transfer Learning}
+
+Transfer learning (học chuyển giao) là một kỹ thuật học máy trong đó một mô hình được phát triển cho một nhiệm vụ được sử dụng lại như là điểm khởi đầu cho một mô hình trên một nhiệm vụ thứ hai. Nói cách khác, kiến thức thu được trong khi giải quyết một vấn đề được áp dụng cho một vấn đề khác, nhưng có liên quan. 
+
+\subsubsection{Định nghĩa Transfer Learning}
+
+Transfer learning là việc sử dụng kiến thức đã học từ một miền nguồn (source domain) để cải thiện việc học trong một miền đích (target domain) khác. Miền nguồn thường có lượng dữ liệu lớn hơn và/hoặc dễ học hơn miền đích. 
+
+Ví dụ, kiến thức thu được khi học cách phân loại các loại xe ô tô (miền nguồn) có thể được áp dụng để phân loại xe tải (miền đích).
+
+\subsubsection{Ứng dụng của Transfer Learning}
+
+Transfer learning đã được ứng dụng thành công trong nhiều lĩnh vực, bao gồm:
+
+\begin{itemize}
+    \item \textbf{Thị giác máy tính:} 
+        \begin{itemize}
+            \item Phân loại ảnh: Xác định các đối tượng trong ảnh (chó, mèo, xe hơi,...)
+            \item Nhận dạng đối tượng: Xác định vị trí của các đối tượng trong ảnh.
+            \item Phân đoạn ảnh: Phân chia ảnh thành các vùng có ý nghĩa.
+        \end{itemize}
+    \item \textbf{Xử lý ngôn ngữ tự nhiên:}
+        \begin{itemize}
+            \item Phân loại văn bản: Phân loại các tài liệu văn bản (tin tức, đánh giá,...)
+            \item Phân tích cảm xúc: Xác định cảm xúc được thể hiện trong văn bản.
+            \item Dịch máy: Dịch văn bản từ ngôn ngữ này sang ngôn ngữ khác.
+        \end{itemize}
+    \item \textbf{Âm thanh và lời nói:}
+        \begin{itemize}
+            \item Nhận dạng giọng nói: Chuyển đổi lời nói thành văn bản.
+            \item Tổng hợp giọng nói: Tạo ra giọng nói từ văn bản.
+        \end{itemize}
+\end{itemize}
+
+\subsubsection{Lợi ích và bất lợi của Transfer Learning}
+
+\textbf{Lợi ích:}
+
+\begin{itemize}
+    \item Cải thiện hiệu suất của mô hình, đặc biệt là khi dữ liệu huấn luyện hạn chế.
+    \item Giảm thời gian huấn luyện và tài nguyên tính toán.
+    \item Nâng cao khả năng khái quát hóa của mô hình.
+\end{itemize}
+
+\textbf{Bất lợi:}
+
+\begin{itemize}
+    \item Có thể xảy ra hiện tượng "negative transfer" nếu miền nguồn và miền đích quá khác biệt.
+    \item Khó khăn trong việc lựa chọn mô hình tiền huấn luyện phù hợp.
+\end{itemize}
