@@ -2,4 +2,8 @@ datatrain/
 glove_data/
 ASL-Sensor-Dataglove-Dataset.zip
 datatrain_40
-datatrain_40.zip
+datasource
+datasource_scaled
+images
+report
+/datatrain_40.zip
